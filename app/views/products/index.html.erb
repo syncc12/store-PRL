@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-10 offset-1">
+    Products
+    <ol id="product-list-ol">
+      <% Product.all.each do |product| %>
+        <li class="product-list-li">
+          <%= link_to product.name, product_path(product) %>
+        </li>
+      <% end %>
+    </ol>
+  </div>
+</div>

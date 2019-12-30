@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-10 offset-1">
+    New Seller
+    <br><br>
+    <%= simple_form_for @seller do |f| %>
+      <%= f.input :name, placeholder: 'Seller Name' %>
+      <%= f.input :description, placeholder: 'Description of Seller' %>
+      <%= f.submit "Create", class: 'btn btn-primary' %>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+<div class="row">
+  <div class="col-10 offset-1">
+    Sellers
+  </div>
+</div>
+<br><br>
+<div class="row">
+  <div class="col-10 offset-1">
+    <%= link_to 'Register New Seller', new_seller_path, class: 'btn btn-primary' %>
+    <!-- <button type="button" class="btn btn-primary" type="button" href="new_seller_link">
+      Register New Seller
+    </button> -->
+  </div>
+</div>
+<br><br>
+<div class="row">
+  <div class="col-10 offset-1">
+    
+    <ol id="seller-list-ol">
+      <% Seller.all.each do |seller| %>
+        <li class="seller-list-li">
+          <%= link_to seller.name, seller_path(seller) %>
+        </li>
+      <% end %>
+    </ol>
+  </div>
+</div>

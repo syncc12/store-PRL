@@ -1,0 +1,121 @@
+@import "bootstrap";
+
+body {
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+h1 {
+  color: #a7e0e1;
+  font-size: 50px;
+  font-weight: normal;
+  margin-bottom: 0px;
+}
+
+h2 {
+  color: white;
+  font-size: 18px;
+  margin-top: 0px;
+}
+
+.me-nav {
+  text-decoration: none;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  border-style: solid;
+  //border-color: #a7e0e1;
+  border-color: white;
+  margin-top: 10px;
+}
+
+.nav-link-custom {
+  text-decoration: none;
+  display: block;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+  border: none;
+}
+
+.nav-link-custom:link {
+  text-decoration: none;
+  display: block;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+  border: none;
+}
+
+.nav-link-custom:hover {
+  text-decoration: none;
+  display: block;
+  font-size: 18px;
+  font-weight: normal;
+  color: gray;
+  border: none;
+}
+
+.nav-link-custom:active {
+  text-decoration: none;
+  display: block;
+  font-size: 18px;
+  font-weight: normal;
+  color: darken(gray, 20);
+  border: none;
+}
+
+.nav-link-custom-div {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 50px;
+  height: 50px;
+  margin: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+}
+
+.nav-divider {
+  position: relative;
+  top: 10%;
+  bottom: 10%;
+  border-left: 1px solid white;
+}
+
+.shadow-box {
+  border: 1px solid white;
+  background: darken(gray, 40);
+  padding: 20px;
+}
+
+.link-master {
+  text-decoration: none;
+  color: white;
+  border: none;
+}
+
+.link-master:link {
+  text-decoration: none;
+  color: white;
+  border: none;
+}
+
+.link-master:hover {
+  text-decoration: none;
+  color: gray;
+  border: none;
+}
+
+.link-master:active {
+  text-decoration: none;
+  color: darken(gray, 20);
+  border: none;
+}
+
+.link-master:visited {
+  text-decoration: none;
+  color: darken(gray, 20);
+  border: none;
+}

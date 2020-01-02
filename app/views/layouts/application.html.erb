@@ -28,9 +28,31 @@
           <div class="nav-link-custom-div">
             <%= link_to 'Sellers', sellers_path, class: 'nav-link-custom' %>
           </div>
+          <% if user_signed_in? %>
+            <div class="nav-link-custom-div">
+              <%= link_to 'My Dashboard', dashboard_path(current_user), class: 'nav-link-custom' %>
+            </div>
+            <div class="nav-link-custom-div">
+              <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: 'nav-link-custom' %>
+            </div>
+          <% else %>
+            <div class="nav-link-custom-div">
+              <%= link_to 'Sign in', new_user_session_path, class: 'nav-link-custom' %>
+            </div>
+            <div class="nav-link-custom-div">
+              <%= link_to 'Sign up!', new_user_registration_path, class: 'nav-link-custom' %>
+            </div>
+          <% end %>
         </div>
+
       </nav>
 
+      <% if notice.present? %>
+        <p class="alert alert-info"><%= notice %></p>
+      <% end %>
+      <% if alert.present? %>
+        <p class="alert alert-danger"><%= alert %></p>
+      <% end %>
 
 
       <%= yield %>

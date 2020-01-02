@@ -8,11 +8,4 @@ class SellersController < ApplicationController
     @seller=Seller.find(params[:id])
   end
 
-  def new
-    @seller=Seller.new
-  end
-
-  def create
-  end
-
 end

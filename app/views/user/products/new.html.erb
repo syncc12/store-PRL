@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-10 offset-1">
+    User/Seller/New_Product
+    <br><br>
+    <%= simple_form_for @product, url: user_seller_products_path do |f| %>
+      <%= f.input :name, placeholder: 'Product Name' %>
+      <%= f.input :description, placeholder: 'Description of Product' %>
+      <%= f.input :price, placeholder: 'Price' %>
+      <%= f.submit "Create", class: 'btn btn-primary' %>
+    <% end %>
+  </div>
+</div>

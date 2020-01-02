@@ -5,3 +5,8 @@
     <%= @product.name %>
   </div>
 </div>
+<div class="row">
+  <div class="col-9 offset-2">
+    <%= @sellers.find(@product.seller_id).name %>
+  </div>
+</div>

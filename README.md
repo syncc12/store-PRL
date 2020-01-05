@@ -4,7 +4,7 @@ This application is located here: https://store-patricklyden.herokuapp.com
 
 <br>
 This project is still a work in progress.
-<br>
+<br><br>
 
 **Purpose:**<br>
 This project is esentially a clone of Amazon.com.  The idea behind the project is to create a site where anyone can create an account, buy, and sell.  This is also very similar to Ebay.com, except without bidding and auctioning.
